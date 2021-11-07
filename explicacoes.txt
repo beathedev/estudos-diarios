@@ -1,0 +1,31 @@
+Uma promise é um objeto que representa o sucesso
+ou a falha de uma operação assíncrona.
+
+- O que é uma operação assíncrona?
+O JavaScript é sempre síncrono e de thread único. 
+A programação síncrona é sempre executada em ordem, ou seja:
+ex:
+func1();
+func2()
+- A func2 só sera executada APÓS a func1.
+
+Entretanto, o javascript também executa o metódo assíncrono.
+
+
+- Mas o JavaScript não é executado em uma única thread?
+O JavaScript que você escreve é executado em uma única thread, 
+porém, os requests/requisições são entregues para uma thread separada.
+
+
+- Por que devemos evitar funções síncronas?
+Elas bloqueiam o loop de eventos, fazendo com que o restante das funções
+requerimentos, comandos etc, sejam "pausados" enquanto o comando antecessor não for finalizado.
+
+
+- Por que usar promises?
+A promise pode envolver e encapsular operações assíncronas.
+As vantagens são:
+1 - Você ganha mais controle e legibilidade no fluxo de lógicas assíncronas.
+2 - Reduz o acoplamento entre funções de callback
+3 - Você tem mais previsibilidade no tratamento de erros.
+
